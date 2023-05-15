@@ -12,7 +12,7 @@ import java.util.List;
 public class SauceDemoInventory {
 
     public SauceDemoInventory() {
-        PageFactory.initElements(Driver.getDriver(), this);
+        PageFactory.initElements(Driver.getDriver(), this);  //tum WebElementleri baslatmak icin bu method cagirilir
     }
 
     @FindBy(tagName = "select")
