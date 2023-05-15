@@ -13,8 +13,9 @@ public class SauceDemoLogin {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(id = "user-name")
-    WebElement txtUsername;   //default elementler olusturulur
+    //default elementler olusturulur
+    @FindBy(id = "user-name")  //etkilesime gececegimiz her objemizi bu sekilde @FindBy ile locate ederek fieldlar haline getiriyoruz.
+    WebElement txtUsername;    //@findBy kullaniyorsak bir constructor icinde PageFactory.initElements metodu cagirilir
 
     @FindBy(id = "password")
     WebElement txtPassword;
