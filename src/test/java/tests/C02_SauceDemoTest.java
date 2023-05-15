@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import pages.SauceDemoInventory;
 import pages.SauceDemoLogin;
 
-public class SauceDemoTest {
+public class C02_SauceDemoTest {
 
     // Navigate to https://www.saucedemo.com/
     // Enter the user name as standard_user

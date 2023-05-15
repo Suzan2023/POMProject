@@ -4,7 +4,7 @@ import Utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DriverUsage {
+public class C01_DriverUsage {
 
  //   Go to URL: https://opensource-demo.orangehrmlive.com/
  //   Verify title contains OrangeHRM.
