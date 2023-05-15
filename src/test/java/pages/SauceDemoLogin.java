@@ -7,12 +7,14 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SauceDemoLogin {
 
+//yapilacak ilk islem constructor olusturup PageFactory.initElement cagirarak initilaze ediyoruz.
+// ancak bunu sadece FindBy kullanacagimiz zaman yapiyoruz
     public SauceDemoLogin() {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
     @FindBy(id = "user-name")
-    WebElement txtUsername;
+    WebElement txtUsername;   //default elementler olusturulur
 
     @FindBy(id = "password")
     WebElement txtPassword;
@@ -20,7 +22,7 @@ public class SauceDemoLogin {
     @FindBy(id = "login-button")
     WebElement btnLogin;
 
-    public void enterUsername(String username){
+    public void enterUsername(String username){  //elementleri cagiracagimiz methodlar olusturulur
         txtUsername.sendKeys(username);
     }
 
@@ -28,7 +30,9 @@ public class SauceDemoLogin {
         txtPassword.sendKeys(password);
     }
 
-    public void clickLogin(){
-        btnLogin.click();
+    public void clickLogin(){  //sitede animasyonlar vs yuzunden yuklenme sorunlari oluyorsa
+        btnLogin.click();                     // burda btnLogin.click ten once WebDriverWait objesi olusturulup boylece
+                               // btnLogin tiklanabilir oldugunda tiklar
+
     }
 }

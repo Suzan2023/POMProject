@@ -34,6 +34,7 @@ public class SauceDemoInventory {
             WebElement currentProduct = products.get(i);
             WebElement nextProduct = products.get(i + 1);
 
+            //suanki urunun(currentproduct)textinin,$'siz string olan ifadenin double bir ifade olarak parseDouble ile yazilmasi:
             double currentPrice = Double.parseDouble(currentProduct.getText().substring(1));  //4.99
             double nextPrice = Double.parseDouble(nextProduct.getText().substring(1));  //7.99
 
