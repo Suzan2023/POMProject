@@ -20,6 +20,10 @@ public class C04_TestCase {
     // quantity = 2            , 3               ,  4
 
 
+    // Ana sayfa
+    // Arama Sayfasi
+    // Urun sayfasi
+    // Sepet sayfasi
     @Test
     public void test() throws InterruptedException {
 
