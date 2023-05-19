@@ -3,10 +3,10 @@ package tests;
 import Utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.amazonPractice.AmazonCartPage;
-import pages.amazonPractice.AmazonHomePage;
-import pages.amazonPractice.AmazonProductPage;
-import pages.amazonPractice.AmazonSearchPage;
+import pages.amazon.AmazonCartPage;
+import pages.amazon.AmazonHomePage;
+import pages.amazon.AmazonProductPage;
+import pages.amazon.AmazonSearchPage;
 
 public class C04_TestCase {
 
