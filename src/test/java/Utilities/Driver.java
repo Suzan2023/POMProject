@@ -23,6 +23,7 @@ public class Driver {
         String browser = ConfigReader.getProperty("browser");
         if(driver == null){
 
+            // Bu kisimda farkli browserlarda calismasi icin switch case kullandik
             switch (browser){
 
                 case "firefox":

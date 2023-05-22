@@ -9,7 +9,7 @@ public class ConfigReader {
 
     public static Properties properties;
 
-    static{
+    static{  // static blog icinde file bulma isini yapiyoruz. Try catch kullanma nedenimiz ise olasi bir hatadan kurtulmak
         String filePath="config.properties";
         try {
             FileInputStream fis=new FileInputStream(filePath);
@@ -22,6 +22,7 @@ public class ConfigReader {
             e.printStackTrace();
         }
     }
+    // Bu method ile config dosyasi icinde elementlere her yerden ulasmak.
     public static String getProperty(String key){
         return properties.getProperty(key);
     }
